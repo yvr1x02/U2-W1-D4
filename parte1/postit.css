@@ -119,3 +119,14 @@ p {
 .post-it:nth-child(8) {
   animation-delay: 0.8s;
 }
+
+.idk {
+  opacity: 0;
+  animation: idk-Anim 1s ease-in-out 5s forwards;
+}
+
+@keyframes idk-Anim {
+  100% {
+    opacity: 1;
+  }
+}
