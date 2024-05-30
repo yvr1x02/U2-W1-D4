@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Indie Flower";
+}
+
+h1 {
+  margin: 1em;
+  text-align: center;
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 50px;
+  padding-bottom: 0.5em;
+}
+
+p {
+  font-size: 25px;
+}
+
+.lavagna {
+  width: 1550px;
+  height: 800px;
+  background-color: lightgray;
+  margin-inline: auto;
+  margin-top: 3rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 5px solid black;
+}
+
+.post-it {
+  width: 300px;
+  height: 230px;
+  margin-inline: 2.4em;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px black;
+}
+.post-it {
+  animation: post-it-Anim 1s backwards;
+  transition: transform 1s;
+}
+
+.post-it:hover {
+  transform: rotate(0deg) scale(1.3);
+  box-shadow: 0 8px 16px;
+  z-index: 99;
+}
+
+.yellow {
+  transform: rotate(-10deg);
+  background: rgb(191, 191, 191);
+  background: linear-gradient(0deg, rgba(191, 191, 191, 1) 0%, rgba(253, 254, 205, 1) 19%);
+}
+
+.green {
+  transform: rotate(7deg);
+  background: rgb(191, 191, 191);
+  background: linear-gradient(0deg, rgba(191, 191, 191, 1) 0%, rgb(186, 247, 173) 19%);
+}
+
+.violet {
+  transform: rotate(-15deg);
+  background: rgb(191, 191, 191);
+  background: linear-gradient(0deg, rgba(191, 191, 191, 1) 0%, rgb(236, 201, 245) 19%);
+}
+
+@keyframes post-it-Anim {
+  0% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.post-it:nth-child(1) {
+  animation-delay: 1.1s;
+}
+
+.post-it:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.post-it:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.post-it:nth-child(4) {
+  animation-delay: 0.7s;
+}
+
+.post-it:nth-child(5) {
+  animation-delay: 1.2s;
+}
+
+.post-it:nth-child(6) {
+  animation-delay: 1.4s;
+}
+
+.post-it:nth-child(7) {
+  animation-delay: 0.6s;
+}
+
+.post-it:nth-child(8) {
+  animation-delay: 0.8s;
+}
